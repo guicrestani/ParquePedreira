@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notícias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Construção do Parque da Pedreira</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Nulla eget odio a risus varius lobortis a nec diam. Proin iaculis nec tellus ac hendrerit. Cras quis metus in
+      augue sollicitudin facilisis a non est. Phasellus sed vehicula ligula. Nullam magna neque, pellentesque vitae
+      nulla id, congue pellentesque nulla. Cras id nisl suscipit, euismod leo non, commodo ante. Vestibulum libero
+      felis, ornare eget congue eget, imperdiet eget mauris. Nullam pellentesque mi quis magna vehicula tincidunt. Nulla
+      sed velit semper tellus efficitur bibendum a cursus massa.
+      <br>
+      Vivamus rutrum tortor quis ligula pellentesque viverra id quis ipsum. Ut rhoncus, sem sed sagittis volutpat, nibh
+      nibh pellentesque erat, sit amet sagittis tellus lorem in lorem. Suspendisse potenti. Donec vel posuere dui. Proin
+      rhoncus convallis tortor. Mauris varius nibh a orci tincidunt, at eleifend enim faucibus. Sed venenatis sapien et
+      nibh tempus, vitae congue dolor efficitur. Quisque ut leo id lorem vestibulum euismod.
+    </ion-card-content>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotos">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+</ion-content>

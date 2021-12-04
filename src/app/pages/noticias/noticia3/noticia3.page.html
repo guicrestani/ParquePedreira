@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notícias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nunc placerat lacus id mollis eleifend</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Nulla a nunc mi. Fusce leo tellus, auctor posuere urna id, finibus tristique magna. Pellentesque dignissim urna id
+      fermentum ultrices. Nam et commodo erat. Mauris purus arcu, mollis sed blandit vel, suscipit sed augue. Quisque
+      pellentesque scelerisque leo, eu lacinia eros commodo ac. Integer ultrices quis metus a sagittis. Cras ut leo
+      libero.
+      <br>
+      Maecenas vitae diam at tortor vehicula condimentum quis sit amet ipsum. Mauris vitae fermentum nibh. Maecenas
+      facilisis leo massa, a placerat eros fermentum vel. Mauris eget placerat diam. Ut sit amet auctor purus. Nulla
+      facilisi. Vivamus convallis ante nec condimentum dapibus. Donec nunc diam, dapibus eget lobortis at, vulputate vel
+      metus. Vestibulum viverra nisl justo, ut mattis lectus sollicitudin quis. Vestibulum fermentum maximus libero, nec
+      convallis dolor egestas non. Nulla efficitur in mi non consequat.
+    </ion-card-content>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotos">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+</ion-content>

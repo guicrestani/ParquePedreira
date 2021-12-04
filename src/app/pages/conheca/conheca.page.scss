@@ -1,0 +1,36 @@
+ion-slide{
+    ion-car-header{
+        ion-img {
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+ion-card{
+    ion-slides{
+        ion-slide{
+            ion-img {
+                height: 350px;
+                width: 350px;
+            }
+        }
+    }
+}
+
+ion-card{
+    ion-grid{
+        ion-text{
+            font-size: 10px;
+            vertical-align: middle;
+        }
+        ion-icon{
+            vertical-align: middle;
+        }
+    }
+}
+
+ion-slides {
+    --bullet-background: black;
+    --bullet-background-active: orange;
+}

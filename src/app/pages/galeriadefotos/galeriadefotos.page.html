@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Galeria de Fotos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Fotos Junho/2021</ion-card-title>
+    </ion-card-header>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotosJunho">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Fotos Abril/2021</ion-card-title>
+    </ion-card-header>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotosAbril">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Fotos Março/2021</ion-card-title>
+    </ion-card-header>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotos">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title>Fotos Janeiro/2021</ion-card-title>
+    </ion-card-header>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotos">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+
+  <ion-card color="light">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <ion-text (click)="irParaHome()">Home</ion-text>
+        </ion-col>
+        <ion-col size="4">
+          <ion-text>Nossas redes sociais</ion-text>
+        </ion-col>
+        <ion-col size="4">
+          <ion-icon name="call-outline"></ion-icon>
+          <ion-text>(xx) xxxxx-xxxx</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-text (click)="irParaConheca()">Conheça-nos</ion-text>
+        </ion-col>
+        <ion-col size="4">
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-text>xxxxxxx.xxxxxx</ion-text>
+        </ion-col>
+        <ion-col size="4">
+          <ion-icon name="mail-outline"></ion-icon>
+          <ion-text>xxxx@xxxx.xxx</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-text (click)="irParaNoticias()">Notícias</ion-text>
+        </ion-col>
+        <ion-col size="4">
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-text>@xxxxxx.xxxxx</ion-text>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-text (click)="irParaGaleriaFotos()">Galeria de Fotos</ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+</ion-content>

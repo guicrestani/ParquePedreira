@@ -1,0 +1,30 @@
+ion-card{
+    ion-text{
+        font-size: 10px;
+        vertical-align: middle;
+    }
+    ion-icon{
+        vertical-align: middle;
+    }
+}
+
+ion-slides{
+    ion-slide{
+        ion-img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+}
+
+ion-slides {
+    --bullet-background: black;
+    --bullet-background-active: orange;
+}
+
+ion-card{
+    ion-img{
+        height: 200px;
+        width: 350px;
+    }
+}

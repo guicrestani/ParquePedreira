@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Notícias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Prédio principal pronto</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Donec elit eros, tempus et dictum eu, sollicitudin volutpat ex. Suspendisse vitae mollis lacus, nec convallis
+      odio. Fusce eu enim scelerisque, ornare lorem in, condimentum nisi. Nunc finibus felis ut neque tempor, ac
+      suscipit mi pulvinar. Nam nec tristique massa. Fusce pulvinar tristique mi in fringilla. Donec egestas interdum
+      tellus. Donec venenatis turpis tellus, eu pretium lacus posuere ut. Quisque commodo erat vitae nibh faucibus
+      feugiat. Curabitur a leo ut justo posuere feugiat. Curabitur rhoncus enim lacinia, aliquam sapien faucibus,
+      consequat tellus. Suspendisse eget leo at lorem pretium luctus. Fusce pretium pharetra elit. In dictum sagittis
+      scelerisque. Aenean feugiat, metus id rhoncus mollis, ante elit mollis est, quis euismod arcu velit in nunc.
+    </ion-card-content>
+    <ion-slides pager="true">
+      <ion-slide *ngFor="let img of fotos">
+        <ion-img src="{{img}}"></ion-img>
+      </ion-slide>
+    </ion-slides>
+  </ion-card>
+
+</ion-content>
